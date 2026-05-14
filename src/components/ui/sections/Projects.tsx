@@ -6,7 +6,7 @@ import { projectsData , type Project } from "@/data/project"
 import { SectionLabel } from "../shared/SectionLabel"
 import { useInView } from "@/hooks/useInView"
 import { Badge } from "@/components/ui/badge"
-import { ArrowUpRight, ExternalLink } from "lucide-react"
+import { ArrowUpRight, Code, ExternalLink } from "lucide-react"
 
 
 // ─── Individual Project Card ────────────────────────────
@@ -142,7 +142,7 @@ function ProjectCard({
             className="flex items-center gap-2 font-mono text-xs text-zinc-500 hover:text-white transition-all duration-200 group/link"
           >
             <div className="w-9 h-9 rounded-xl flex items-center justify-center border border-zinc-800 hover:border-zinc-600 hover:bg-zinc-800 transition-all duration-200">
-             
+              <Code size={15} />
             </div>
 
             {!isWide && (
@@ -230,7 +230,7 @@ export function Projects() {
             </h2>
           </div>
 
-          {/* <div
+          <div
             className="transition-all duration-700 delay-150"
             style={{
               opacity: inView ? 1 : 0,
@@ -249,10 +249,9 @@ export function Projects() {
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200"
               />
             </a>
-          </div> */}
+          </div>
         </div>
 
-        {/* ── Bento Grid ──────────────────────────── */}
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5"
         >

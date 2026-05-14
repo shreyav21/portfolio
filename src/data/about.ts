@@ -20,5 +20,5 @@ export const aboutData = {
     { emoji: "🌙", text: "Night owl coder" },
     { emoji: "☕", text: "Fuelled by coffee" },
   ],
-  image: "/3d-woman-lifestyle.jpg", // drop your photo in /public/profile.jpg
+  image: "/3d-woman-lifestyle.jpg",
 }
