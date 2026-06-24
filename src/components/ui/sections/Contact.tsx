@@ -341,10 +341,7 @@ export function Contact() {
   const { ref, inView } = useInView()
 
   return (
-    <section
-      id="contact"
-      className="relative py-28 md:py-36 overflow-hidden"
-    >
+    <section id="contact" className="relative py-28 md:py-36 overflow-hidden">
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none"
         aria-hidden="true"
@@ -358,7 +355,6 @@ export function Contact() {
       />
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-
         {/* Header */}
         <div
           ref={ref}
@@ -403,7 +399,7 @@ export function Contact() {
                 transform: inView ? "translateY(0)" : "translateY(20px)",
               }}
             >
-              <div className="font-mono text-[10px] tracking-widest uppercase text-zinc-600 mb-3">
+              {/* <div className="font-mono text-[10px] tracking-widest uppercase text-zinc-600 mb-3">
                 Find me on
               </div>
               <div className="flex flex-col gap-2">
@@ -415,12 +411,11 @@ export function Contact() {
                     inView={inView}
                   />
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-
       </div>
     </section>
-  )
+  );
 }
